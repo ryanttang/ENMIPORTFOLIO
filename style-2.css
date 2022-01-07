@@ -1,0 +1,217 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: #202020;
+    overflow: hidden;
+    cursor: url("cursor.png"), auto !important;
+    font-family: "Inconsolata";
+
+}
+
+.gallery-header {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Monument Extended";
+    text-transform: uppercase;
+    color: white;
+    z-index: 2;
+}
+
+.container {
+    position: absolute;
+    width: 200%;
+    height: 200vh;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin: 4em 0;
+}
+
+.block {
+    width: 400px;
+    height: 500px;
+    background: grey;
+    margin: 1em;
+    filter: grayscale(1);
+    opacity: 0.4;
+    transition: 1s;
+}
+
+.block:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.block-1 {
+    background: url("PHOTOS/042A2402.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-2 {
+    background: url("PHOTOS/Enmi-Loves-Alyssa-3_14.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-3 {
+    background: url("PHOTOS/Enmi-Loves-Alyssa-3_21.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-4 {
+    background: url("PHOTOS/Enmi-Loves-Alyssa-3_25.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-5 {
+    background: url("PHOTOS/Enmi-Loves-Alyssa-3_39.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-6 {
+    background: url("PHOTOS/Enmi-Loves-Alyssa-3_55.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-7 {
+    background: url("PHOTOS/Enmi-Loves-Alyssa-3_65.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-8 {
+    background: url("PHOTOS/Enmi-Loves-Alyssa-3_34.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__button {
+	z-index: 2;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #B09398;
+	border: 0;
+	cursor: pointer;
+	position: absolute;
+	left: 48%;
+	top: 0;
+	margin: 20px;
+	outline: none;
+	animation-duration: 300ms;
+	animation-timing-function: ease;
+}
+
+.header__button[data-open="true"] {
+	background-color: #DCDCDD;
+	animation-name: scale;
+}
+
+.header__button[data-open="false"] {
+	transition: background-color 250ms linear;
+}
+
+@keyframes scale {
+	from {
+		transform: scale(0);
+	}
+
+	to {
+		transform: scale(100%);
+	}
+}
+h1 {
+	font-size: 10rem;
+	font-weight: normal;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+}
+
+.header__nav {
+	background-color: #B09398;
+	position: fixed;
+	overflow: hidden;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 40px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	visibility: hidden;
+	clip-path: circle(var(--radius) at calc(100% - 55px) 47px);
+}
+
+.header__nav[data-active="true"] {
+	visibility: visible;
+}
+
+.header__menu {
+	padding: 0;
+	margin: 0;
+}
+
+.header__menu > .header__menu-item {
+	font-size: 10vh;
+	font-family: "Inconsolata";
+	text-align: center;
+}
+
+.header__menu > .header__menu-item:not(:last-of-type) {
+	margin-bottom: .5em;
+	margin-top: .5em;
+}
+
+.header__menu-item a {
+	letter-spacing: -4px;
+	font-weight: 300 !important;
+	color: #EBFCFB;
+	text-decoration: none;
+}
+
+.site-logo {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: "Inconsolata";
+	font-size: 30px;
+	line-height: 100px;
+	text-transform: uppercase;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	padding: 0 40px;
+	display: flex;
+	justify-content: space-around;
+	font-family: "Inconsolata";
+	text-transform: uppercase;
+	line-height: 100px;
+	font-size: 1.8rem;
+}
+
+.site-menu {
+	display: flex;
+}
+
+.menu-item {
+	margin-left: 60px;
+}

@@ -1,0 +1,234 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inconsolata";
+}
+
+html,
+body {
+	background: #C4AD83;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+}
+
+.column {
+	width: 50%;
+	height: 100vh;
+}
+
+.left {
+	position: relative;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: url("PHOTOS/Enmi-Loves-Alyssa-3_74.jpg") no-repeat 50% 50%;
+	background-size: cover;
+	padding: 20px;
+}
+
+.right {
+	display: flex;
+	padding: 60px 0;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.img {
+	width: 160px;
+	height: 200px;
+	margin: 6px;
+}
+
+.img-1 {
+	background: url("PHOTOS/042A3573.jpg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.img-2 {
+	background: url("PHOTOS/Enmi-Loves-Alyssa-3_6.jpg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.img-3 {
+	background: url("PHOTOS/Enmi-Loves-Alyssa-3_48.jpg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.img-4 {
+	background: url("PHOTOS/Enmi-Loves-Alyssa-3_44.jpg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.img-5 {
+	background: url("PHOTOS/Enmi-Loves-Alyssa-3_22.jpg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.img-6 {
+	background: url("PHOTOS/Enmi-Loves-Alyssa-3_46.jpg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.img-7 {
+	background: url("PHOTOS/Enmi-Loves-Alyssa-3_73.jpg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.img-8 {
+	background: url("PHOTOS/Enmi-Loves-Alyssa-3_41.jpg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.about-header {
+	color: #948B89;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+.about-header h1 {
+	position: relative;
+}
+
+.ml12 .letter {
+	display: inline-block;
+	line-height: 1em;
+	font-weight: 100;
+	font-size: .5em;
+}
+
+.link a {
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-family: "Actor";
+}
+
+@media (min-width: 900px) {
+	.container {
+		display: flex;
+	}
+
+	.images {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 900px) {
+	.column {
+		width: 100%;
+	}
+
+	.img {
+		width: 400px;
+		height: 400px;
+	}
+
+	.about-header {
+		font-size: 20px;
+		padding: 80px 0;
+	}
+}
+
+header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__button {
+	z-index: 2;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #c0b9dd;
+	border: 0;
+	cursor: pointer;
+	position: absolute;
+	left: 95%;
+	top: 0;
+	margin: 20px;
+	outline: none;
+	animation-duration: 300ms;
+	animation-timing-function: ease;
+}
+
+.header__button[data-open="true"] {
+	background-color: #C6B677;
+	animation-name: scale;
+}
+
+.header__button[data-open="false"] {
+	transition: background-color 250ms linear;
+}
+
+@keyframes scale {
+	from {
+		transform: scale(0);
+	}
+
+	to {
+		transform: scale(100%);
+	}
+}
+h1 {
+	font-size: 10rem;
+	font-weight: normal;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+}
+
+.header__nav {
+	background-color: #c0b9dd;
+	position: fixed;
+	overflow: hidden;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 40px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	visibility: hidden;
+	clip-path: circle(var(--radius) at calc(100% - 55px) 47px);
+}
+
+.header__nav[data-active="true"] {
+	visibility: visible;
+}
+
+.header__menu {
+	padding: 0;
+	margin: 0;
+}
+
+.header__menu > .header__menu-item {
+	font-size: 10vh;
+	font-family: 'Actor', sans-serif;
+	text-align: center;
+}
+
+.header__menu > .header__menu-item:not(:last-of-type) {
+	margin-bottom: .5em;
+	margin-top: .5em;
+}
+
+.header__menu-item a {
+	letter-spacing: -4px;
+	font-weight: 300 !important;
+	color: #EBFCFB;
+	text-decoration: none;
+}

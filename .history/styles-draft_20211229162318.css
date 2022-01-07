@@ -1,0 +1,611 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* cursor: e-resize; */
+}
+
+@font-face {
+	font-family: "Ribes";
+	src: url(FONT/Ribes-Black.otf);
+  }
+
+@font-face {
+	font-family: "Porporo";
+	src: url(FONT/Porpora-Regular.ttf);
+  }
+
+@font-face {
+	font-family: "Messapia";
+	src: url(FONT/Messapia-Regular.otf);
+  }
+
+@font-face {
+	font-family: "Ignazio";
+	src: url(FONT/IgnazioDisplay-Regular.otf);
+  }
+
+@font-face {
+	font-family: "Sneaky";
+	src: url(FONT/Sneaky-Times.otf);
+  }
+
+@font-face {
+	font-family: "Apfel";
+	src: url(FONT/ApfelGrotezk-Regular.otf);
+  }
+
+@font-face {
+	font-family: "Necto";
+	src: url(FONT/NectoMono-Regular.otf);
+  }
+
+@font-face {
+	font-family: "Sprat";
+	src: url(FONT/Sprat-CondensedRegular.otf);
+  }
+
+body {
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	/* background: #f9e8cd; */
+	/* background: radial-gradient(circle at center, #2954a8, #0090c4, #e4c089);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; */
+	overflow: hidden;
+	font-family: "Sneaky";
+
+}
+
+#gradient
+{
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  box-shadow: inset 0 0 200px hsla(0,0%,0%,.4);
+
+}
+
+/* @keyframes gradient {
+    0% {
+        background-position: 0% 200%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 200%;
+    }
+} */
+
+.container-items {
+	position: absolute;
+	bottom: 40%;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	/* cursor: pointer; */
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: color 2s;
+    transition: color 2s;
+	color: #c3ccdb;
+
+}
+
+a:hover {
+	color: #1e263b;
+}
+
+.item {
+	position: relative;
+	flex-grow: 1;
+	font-family: "Porporo";
+	font-size: 15rem;
+	transition: all 300ms ease-in-out;
+	/* text-transform: uppercase; */
+}
+
+.item:hover {
+	flex-grow: 5;
+	font-size: 400px;
+}
+
+h3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #6bacec;
+	font-size: 20rem;
+}
+.images {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 5px;
+}
+
+.img {
+	width: 70px;
+	height: 180px;
+	background: darkblue;
+	filter: grayscale(1);
+	opacity: 0.6;
+}
+
+.img-1 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_4.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-2 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_10.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-3 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_45.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-4 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_43.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-5 {
+	transform: scale(1);
+	background: url(PHOTOS/Enmi-Loves-Alyssa-3_69.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-6 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_29.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-7 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_40.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-8 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_53.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-9 {
+	transform: scale(1);
+	background: url(/PHOTOS/042A3119.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-10 {
+	transform: scale(1);
+	background: url(/PHOTOS/042A2402.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-11 {
+	transform: scale(1);
+	background: url(/PHOTOS/Ayelen_03.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-12 {
+	transform: scale(1);
+	background: url(/PHOTOS/Ayelen_06.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-13 {
+	transform: scale(1);
+	background: url(PHOTOS/Ayelen_08.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-14 {
+	transform: scale(1);
+	background: url(/PHOTOS/Ayelen_10.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-15 {
+	transform: scale(1);
+	background: url(/PHOTOS/ThemoonmyshadowandI_3.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-16 {
+	transform: scale(1);
+	background: url(/PHOTOS/ThemoonmyshadowandI_5.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-17 {
+	transform: scale(1);
+	background: url(/PHOTOS/Ayelen_02.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-18 {
+	transform: scale(1);
+	background: url(/PHOTOS/Ayelen_05.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-19 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_25.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-20 {
+	transform: scale(1);
+	background: url(/PHOTOS/042A3512.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-21 {
+	transform: scale(1);
+	background: url(PHOTOS/Enmi-Loves-Alyssa-3_11.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-22 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_14.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-23 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_18.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-24 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_53.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-25 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_10.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-26 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_45.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-27 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_43.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-28 {
+	transform: scale(1);
+	background: url(PHOTOS/Enmi-Loves-Alyssa-3_69.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-29 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_29.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-30 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_40.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-31 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_53.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-32 {
+	transform: scale(1);
+	background: url(/PHOTOS/Enmi-Loves-Alyssa-3_53.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.container-img-wrap {
+	position: absolute;
+	top: -80rem;
+	left: -20px;
+	width: 700px;
+	height: 1000px;
+	overflow: hidden;
+	pointer-events: none;
+	visibility: hidden;
+}
+
+.container-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+@media (max-width: 950px) {
+	.container-items {
+		height: 100px;
+	}
+	.item {
+		font-size: 20px;
+	}
+	.item:hover {
+		flex-grow: 1;
+		font-size: 20px;
+	}
+	.container-img-wrap {
+		display: none;
+	}
+	.site-logo {
+		top: 50px;
+	}
+	.navbar {
+		top: 15%;
+	}
+	.header__button {
+		top: 5%;
+		height: 24px;
+		width: 24px;
+	}
+	h3 {
+		font-size: 10rem;
+	}
+	.container-items {
+		top: 25%;
+
+	}
+}
+
+.site-logo {
+	position: fixed;
+	left: 3%;
+	top: .5%;
+	/* transform: translateX(-50%); */
+	font-family: "Porporo";
+	font-size: 15px;
+	line-height: 100px;
+	text-transform: uppercase;
+	z-index: 1;
+
+}
+
+.site-logo li {
+	list-style-type: none;
+
+}
+
+.nav-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 20rem;
+}
+
+.nav-menu-item {
+	font-size: .9rem;
+}
+
+
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	padding: 0 40px;
+	display: flex;
+	justify-content: space-between;
+	font-family: "Porporo";
+	text-transform: lowercase;
+	line-height: 100px;
+	font-size: 3rem;
+	top: 0;
+}
+
+.site-menu {
+	display: flex;
+}
+
+.menu-item {
+	margin-left: 60px;
+}
+
+.headline {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	top: 20%;
+	padding: 40px;
+	text-transform: uppercase;
+	font-family: "Mak";
+	font-size: 40px;
+	z-index: 2;
+}
+
+.headline-left span {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.link {
+	margin: 40px 0;
+}
+
+.link a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+
+header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__button {
+	z-index: 2;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #c4d0e0;
+	border: 0;
+	cursor: pointer;
+	position: absolute;
+	left: 44%;
+	top: 0;
+	margin: 20px;
+	outline: none;
+	animation-duration: 300ms;
+	animation-timing-function: ease;
+}
+
+.header__button[data-open="true"] {
+	background-color: #f9e8cd;
+	animation-name: scale;
+}
+
+.header__button[data-open="false"] {
+	transition: background-color 250ms linear;
+}
+
+@keyframes scale {
+	from {
+		transform: scale(0);
+	}
+
+	to {
+		transform: scale(100%);
+	}
+}
+h1 {
+	font-size: 10rem;
+	font-weight: normal;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+}
+
+.header__nav {
+	background-color: #8e93a6;
+	position: fixed;
+	overflow: hidden;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 40px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	visibility: hidden;
+	clip-path: circle(var(--radius) at calc(100% - 55px) 47px);
+}
+
+.header__nav[data-active="true"] {
+	visibility: visible;
+}
+
+.header__menu {
+	padding: 0;
+	margin: 0;
+}
+
+.header__menu > .header__menu-item {
+	font-size: 10vh;
+	font-family: "Inconsolata";
+	text-align: center;
+	display: flex;
+
+
+}
+
+.header__menu > .header__menu-item:not(:last-of-type) {
+	margin-bottom: .5em;
+	margin-top: .5em;
+
+}
+
+.header__menu-item a {
+	letter-spacing: -4px;
+	font-weight: 300 !important;
+	color: #EBFCFB;
+	text-decoration: none;
+}
+
+.footer {
+	position: absolute;
+	left: 44%;
+	bottom: 0;
+	padding: 40px;
+	font-family: "Inconsolata";
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 1.1rem;
+}
+
+.container-artist {
+	width: 50%;
+	transform: translateX(50%);
+}
+
+.container-nav-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container-img-wrap-center {
+	position: absolute;
+	top: -80rem;
+	left: -20px;
+	width: 600px;
+	height: 500px;
+	overflow: hidden;
+	pointer-events: none;
+	visibility: hidden;
+}
+
+.container-img-center {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
